@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6F1E5"
+    tools:context=".MainActivity2">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home2"
+        android:layout_width="108dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#E390AA"
+        android:text="Favorite"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_star_24"
+        app:iconGravity="top"
+        app:iconSize="50dp"
+        app:iconTint="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appoinment" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="114dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="150dp"
+        android:text="Dr . rayan"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="74dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="150dp"
+        android:text="Tehran, IR"
+        android:textColor="#747A7A"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="230dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/wifi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/download__1_" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home"
+        android:layout_width="114dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#F1DEDE"
+        android:text="Home consultation"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconGravity="top"
+        app:iconSize="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/home2"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wifi" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/wifi"
+        android:layout_width="114dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#FFB1E8E3"
+        android:cursorVisible="true"
+        android:drawableTop="@drawable/ic_baseline_wifi_24"
+        android:text="Online visit "
+        android:textAlignment="gravity"
+        android:textColor="#090808"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_wifi_24"
+        app:iconGravity="top"
+        app:iconSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/appoinment"
+        android:layout_width="114dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#92A4FA"
+        android:cursorVisible="true"
+        android:text="Book an appoinment"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:backgroundTint="#92B4EA"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconGravity="top"
+        app:iconSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/wifi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
