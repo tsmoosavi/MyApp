@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
         //setContentView(binding.root)//این درسته و خلاصه است.
 
-
         var button1 = binding.Button0
         var button2 = binding.button1
         var button3 = binding.button2
