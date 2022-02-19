@@ -22,7 +22,7 @@ lateinit var binding:FragmentDoctorInfoBinding
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentDoctorInfoBinding.inflate(inflater, container, false)
-        binding.nameBoxFrag.text = hospital2.getDoctor(docId).name
+
 
 
 
