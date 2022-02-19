@@ -11,7 +11,7 @@
         android:id="@+id/favorite"
         android:layout_width="108dp"
         android:layout_height="106dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="#E390AA"
         android:text="@string/favorite"
         android:textColor="#000000"
@@ -22,7 +22,7 @@
         app:iconSize="50dp"
         app:iconTint="#FFEB3B"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appoinment" />
 
@@ -38,7 +38,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/docImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -83,10 +83,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/home"
-        android:layout_width="114dp"
+        android:layout_width="108dp"
         android:layout_height="106dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#F1DEDE"
         android:text="@string/home"
@@ -97,13 +97,13 @@
         app:iconGravity="top"
         app:iconSize="50dp"
         app:layout_constraintEnd_toStartOf="@+id/favorite"
-        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wifi" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/wifi"
-        android:layout_width="114dp"
+        android:layout_width="108dp"
         android:layout_height="106dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="416dp"
@@ -125,8 +125,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/appoinment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="108dp"
+        android:layout_height="106dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="416dp"
         android:layout_marginEnd="50dp"
@@ -142,7 +142,7 @@
         app:iconSize="50dp"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/wifi"
         app:layout_constraintTop_toTopOf="parent" />
 
