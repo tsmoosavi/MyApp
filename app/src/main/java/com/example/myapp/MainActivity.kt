@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
         var button2 = binding.button1
         var button3 = binding.button2
         var hospital1 = Hospital
-        var doc1 = Doctor("Rayan" , 1, 21343)
-        var doc2 = Doctor("Brono" , 2, 47292)
-        var doc3 = Doctor("Arian" , 3, 84937)
+        var doc1 = Doctor("دکتر رایان" , 1, 21343)
+        var doc2 = Doctor("دکتر برونو" , 2, 47292)
+        var doc3 = Doctor("دکتر آریان" , 3, 84937)
         hospital1.addDoctor(doc1)
         hospital1.addDoctor(doc2)
         hospital1.addDoctor(doc3)

@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/purple_200">
 
     <TextView
         android:id="@+id/welcome"
-        android:layout_width="266dp"
+        android:layout_width="wrap_content"
         android:layout_height="46dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="60dp"
         android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="#64DD17"
         app:layout_constraintDimensionRatio="h,3:3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textAlignment="center"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Button0"
@@ -55,13 +57,15 @@
 
     <TextView
         android:id="@+id/choice"
-        android:layout_width="160dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:text="@string/choice"
         android:textSize="15sp"
+        android:textColor="#6200EA"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/welcome"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome" />
 </androidx.constraintlayout.widget.ConstraintLayout>
