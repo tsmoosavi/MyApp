@@ -7,63 +7,58 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/phoneAndName"
+        android:id="@+id/welcome"
         android:layout_width="266dp"
         android:layout_height="46dp"
-        android:layout_marginTop="76dp"
-        android:text="enter your name and number"
+        android:layout_marginTop="84dp"
+        android:text="@string/welcome"
         app:layout_constraintDimensionRatio="h,3:3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/Button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:text="@string/rayan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:hint="name"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintDimensionRatio="w,1:1"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/brono"
+        app:layout_constraintEnd_toEndOf="@+id/Button0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneAndName" />
+        app:layout_constraintTop_toBottomOf="@+id/Button0" />
 
     <Button
-        android:id="@+id/submitBotton"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="submit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="40dp"
+        android:text="@string/arian"
+        app:layout_constraintEnd_toEndOf="@+id/button1"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
-    <TextView
-        android:id="@+id/helloBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:contentDescription=" "
-        android:onClick="onButtonClick"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submitBotton" />
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
-    <EditText
-        android:id="@+id/phone"
+    <TextView
+        android:id="@+id/choice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:ems="10"
-        android:hint="phone number"
-        android:inputType="textPersonName"
-        android:text="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        android:textSize="15sp"
+        android:text="@string/choice"
+        app:layout_constraintEnd_toEndOf="@+id/welcome"
+        tools:layout_editor_absoluteY="146dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

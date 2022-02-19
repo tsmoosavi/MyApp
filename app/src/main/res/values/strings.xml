@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">My App</string>
+    <string name="favorite">علاقمندی ها</string>
+    <string name="visit">معاینه آنلاین</string>
+    <string name="appoinment">رزرو نوبت</string>
+    <string name="home">مشاوره در منزل</string>
+    <string name="rayan">دکتر رایان</string>
+    <string name="brono">دکتر برونو</string>
+    <string name="arian">دکتر اریان</string>
+    <string name="nameBoxFrag">نام دکتر</string>
+    <string name="idBoxFrag">آیدی</string>
+    <string name="phoneBoxFrag">نام دکتر</string>
+    <string name="docName">نام دکتر</string>
+    <string name="docId">آیدی دکتر</string>
+    <string name="docImage">تصویر دکتر</string>
+    <string name="welcome">به بیمارستان شفا خوش آمدید</string>
+    <string name="choice">لطفا دکتر خود را انتخاب کنید.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

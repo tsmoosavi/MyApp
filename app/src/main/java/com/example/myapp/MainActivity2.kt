@@ -13,9 +13,12 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        binding.textView
-        binding.home
         var homeButton = binding.home
-
+      var docId =  intent.getIntExtra("id",0)
+        var docName = intent.getStringExtra("name")
+        var docPhone = intent.getLongExtra("phone",0)
+        var hospital2 = Hospital
+        binding.docName.text =  hospital2.getDoctor(docId).name
+       binding.docId.text =  hospital2.getDoctor(docId).id.toString()
     }
 }

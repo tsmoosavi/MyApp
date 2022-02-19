@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,17 +8,42 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/nameBoxFrag"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:layout_marginTop="20dp"
-        android:text="Button" />
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="90dp"
+        android:text="TextView"
+        android:textColor="#A3ABAC"/>
+    <TextView
+        android:id="@+id/idBoxFrag"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="57dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="103dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_medical_services_24" />
+
+    <TextView
+        android:id="@+id/phoneBoxFrag"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"/>
+
 
 </FrameLayout>

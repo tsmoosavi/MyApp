@@ -8,12 +8,12 @@
     tools:context=".MainActivity2">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/home2"
+        android:id="@+id/favorite"
         android:layout_width="108dp"
         android:layout_height="106dp"
         android:layout_marginTop="56dp"
         android:backgroundTint="#E390AA"
-        android:text="Favorite"
+        android:text="@string/favorite"
         android:textColor="#000000"
         android:textSize="12sp"
         app:cornerRadius="10dp"
@@ -27,12 +27,12 @@
         app:layout_constraintTop_toBottomOf="@+id/appoinment" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="114dp"
-        android:layout_height="29dp"
+        android:id="@+id/docName"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="152dp"
         android:text="Dr . rayan"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -42,18 +42,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/docImage"
         android:layout_width="74dp"
         android:layout_height="72dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:adjustViewBounds="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/docId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
@@ -64,23 +64,21 @@
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/docImage"
+        app:layout_constraintTop_toBottomOf="@+id/docName" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="230dp"
-        android:layout_height="218dp"
-        android:layout_marginStart="70dp"
+        android:layout_width="281dp"
+        android:layout_height="176dp"
         android:layout_marginTop="132dp"
-        android:layout_marginEnd="70dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/wifi"
+        app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.737"
         app:srcCompat="@drawable/download__1_" />
 
     <com.google.android.material.button.MaterialButton
@@ -91,14 +89,14 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#F1DEDE"
-        android:text="Home consultation"
+        android:text="@string/home"
         android:textColor="#000000"
         android:textSize="12sp"
         app:cornerRadius="10dp"
         app:icon="@drawable/ic_baseline_home_24"
         app:iconGravity="top"
         app:iconSize="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/home2"
+        app:layout_constraintEnd_toStartOf="@+id/favorite"
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wifi" />
@@ -124,16 +122,17 @@
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/appoinment"
-        android:layout_width="114dp"
-        android:layout_height="106dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="416dp"
         android:layout_marginEnd="50dp"
         android:backgroundTint="#92A4FA"
         android:cursorVisible="true"
-        android:text="Book an appoinment"
+        android:text="@string/appoinment"
         android:textColor="#000000"
         android:textSize="12sp"
         app:backgroundTint="#92B4EA"
@@ -141,10 +140,23 @@
         app:icon="@drawable/ic_baseline_home_24"
         app:iconGravity="top"
         app:iconSize="50dp"
+        app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toEndOf="@+id/wifi"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.myapp.DoctorInfo"
+        android:layout_width="259dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
