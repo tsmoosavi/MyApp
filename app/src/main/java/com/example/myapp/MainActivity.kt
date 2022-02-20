@@ -56,8 +56,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, MainActivity2::class.java)
         intent.putExtra("id",id )
         intent.putExtra("name", name)
-        intent.putExtra("name", "name")
-
         intent.putExtra("phone",phone)
 
         startActivity(intent)

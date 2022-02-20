@@ -52,20 +52,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
-    <TextView
-        android:id="@+id/docId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="150dp"
-        android:textColor="#747A7A"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/docImage"
-        app:layout_constraintTop_toBottomOf="@+id/docName" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="293dp"
@@ -110,7 +96,7 @@
         android:backgroundTint="#FFB1E8E3"
         android:cursorVisible="true"
         android:drawableTop="@drawable/ic_baseline_wifi_24"
-        android:text="Online visit "
+        android:text="@string/visit"
         android:textAlignment="gravity"
         android:textColor="#090808"
         app:cornerRadius="10dp"
@@ -147,7 +133,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.example.myapp.DoctorInfo"
+        android:name="com.example.myapp.DoctorInfofragment"
         android:layout_width="259dp"
         android:layout_height="76dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"

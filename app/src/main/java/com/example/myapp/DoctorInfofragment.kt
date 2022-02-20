@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.myapp.databinding.FragmentDoctorInfoBinding
 
 
-class DoctorInfo : Fragment() {
+class DoctorInfofragment : Fragment() {
 lateinit var binding:FragmentDoctorInfoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
