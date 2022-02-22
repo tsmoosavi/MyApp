@@ -19,6 +19,6 @@ class MainActivity2 : AppCompatActivity() {
         var docPhone = intent.getLongExtra("phone",0)
         var hospital2 = Hospital
         binding.docName.text =  hospital2.getDoctor(docId).name
-       binding.docId.text =  hospital2.getDoctor(docId).id.toString()
+//       binding.docId.text =  hospital2.getDoctor(docId).id.toString()
     }
 }

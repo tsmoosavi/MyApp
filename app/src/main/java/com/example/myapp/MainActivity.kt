@@ -26,16 +26,12 @@ class MainActivity : AppCompatActivity() {
         var button1 = binding.Button0
         var button2 = binding.button1
         var button3 = binding.button2
-        var hospital1 = Hospital
-        var doc1 = Doctor("دکتر رایان" , 1, 21343)
-        var doc2 = Doctor("دکتر برونو" , 2, 47292)
-        var doc3 = Doctor("دکتر آریان" , 3, 84937)
-        hospital1.addDoctor(doc1)
-        hospital1.addDoctor(doc2)
-        hospital1.addDoctor(doc3)
-        button1.text = hospital1.doctorList[0].name
-        button2.text = hospital1.doctorList[1].name
-        button3.text = hospital1.doctorList[2].name
+//        Hospital.addDoctor(doc1)
+//        Hospital.addDoctor(doc2)
+//        Hospital.addDoctor(doc3)
+        button1.text = Hospital.doctorList[0].name
+        button2.text = Hospital.doctorList[1].name
+        button3.text = Hospital.doctorList[2].name
         button1.setOnClickListener {
             gotoActivity(1)
         }
@@ -45,21 +41,23 @@ class MainActivity : AppCompatActivity() {
         button3.setOnClickListener {
             gotoActivity(3)
         }
-
-
-
-
     }
-
     fun gotoActivity(id: Int) {
 
         val intent = Intent(this, MainActivity2::class.java)
         intent.putExtra("id",id )
         intent.putExtra("name", name)
         intent.putExtra("phone",phone)
+        intent.putExtra("doctor",Hospital.doctorList[0])
+        intent.putExtra("doctor",Hospital.doctorList[1])
+        intent.putExtra("doctor",Hospital.doctorList[2])
+
 
         startActivity(intent)
     }
+//    fun onButtonClick(view: View){
+//        gotoActivity()
+//    }
 
 
     //        setContentView(R.layout.activity_main)
